@@ -1,0 +1,109 @@
+오후 4:53 2023-09-29
+<T-project>
+
+<html>
+<head>
+<style>
+
+.total{
+  backgroung : pink ;
+  text-align : right ;
+margin: 1px ;
+padding: 1px ;
+}
+
+.container{
+ margin-top : 4em ;
+ margin-left : 30% ;
+background : lightblue ;
+width : 500px ;
+height : 500px ;
+}
+
+#pdiv {
+font-weight : bold ;
+margin-top : 5px ;
+font-size : 50px ;
+padding-top : 30px ;
+height : 100px ;
+background : violet ;
+text-align : center ;
+vertical-align : middle ;
+margin : 5px ;
+}
+
+.buttonDiv{
+margin-top : 12px ;
+width : 300px ;
+height : 100px ;
+text-align : center ;
+margin :5px ;
+background : orange ;
+padding-top : 30px ;
+}
+
+button{
+font-size :30px ;
+}
+#a:hover {
+ color.var(--clr-white) ;
+ background: var(--clr-black);
+}
+#b:hover {
+ color: var(--clr-white) ;
+ background: var(--clr-black) ;
+}
+#c: hover {
+color: var(--clr-black) ;
+background: var(--clr-black) ;
+}
+
+</style>
+</head>
+<body>
+
+<div class='total'>
+
+<div class='container'>
+<p id = 'pdiv' >0</p>
+
+<div class="buttonDiv">
+   <button id= 'a'>-</button>
+   <button id= 'b'>Reset</button>
+   <button id= 'c'>+</button>
+  </div>
+
+</div>
+
+</div>
+<script>
+
+const vv = document.getElementById('pdiv');
+  let count = 0;
+  const aa = document.getElementById('a');
+  aa.addEventListener('click', function(){vv.innerHTML = --count;
+    if (count < 0) {vv.style.color = "red";}});
+  const bb = document.getElementById('b');
+  bb.addEventListener('click', function(){vv.innerHTML = count = 0;
+    vv.style.color = "#222";});
+  const cc = document.getElementById('c');
+  cc.addEventListener('click', function(){vv.innerHTML = ++count;
+      if (count > 0) {vv.style.color = "green";}});
+</script>
+
+
+
+<h1>T-PROJECT</h1>
+<ol>
+<li> + 를 한번 클릭할 때마다1씩증가</li>
+<li>  - 를 한번 클릭할 때마다 1씩감소</li>
+</ol>
+<ul>
+<li>TWO 버튼을 만든다.</li><br>
+<li>I'll say, that is T-project. because it seems very hard issue.</li><br>
+<li>I don't know, how to make this.</li><br>
+<li>I think, it needs very long time.</li><br>
+</ul>
+
+</body>
+</html>
